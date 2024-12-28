@@ -1,0 +1,131 @@
+.attribution{
+    text-align: center;
+}
+#img1{
+    border-radius: 30px;
+    padding: 15px;
+
+}
+
+
+body{
+    background-color:hsl(29, 53%, 90%);
+    width: 100%;
+    min-height: 100vh;
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.all{
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    gap: 6px;
+    text-align: left;
+    font-family: outfit;
+    font-size: 16px;
+
+}
+
+.container{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    border: 5px solid white;
+    border-radius: 15px;
+}
+@font-face {
+    font-family: outfit;
+    src: url(/assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: young;
+    src: url(/assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+#title1{
+    font-family: young;
+    margin-left: 15px;
+    margin-bottom: auto;
+
+}
+.p1{
+    position: relative;
+    margin-top: auto;
+    margin-left: 15px;
+}
+.prep{
+    display: flex;
+    background-color: hsl(330, 100%, 98%);
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+
+}
+#ul1 li{
+    padding: 10px;
+    height: 30px;
+    line-height: 30px;
+}
+#ul1 li::marker{
+    padding: 10px;
+    color: hsl(332, 51%, 32%);
+}
+
+#prept{
+    float: none;
+}
+#ing{
+    font-family: young;
+    padding-left: 10px;
+    margin-bottom: auto;
+    color: hsl(14, 45%, 36%);
+}
+
+.orderedlist li{
+    padding: 10px;
+}
+.orderedlist li::marker{
+    color: hsl(14, 45%, 36%);
+}
+.ul2 li{
+    padding: 10px;
+}
+.ul2 li::marker{
+    color: hsl(14, 45%, 36%);
+}
+#inst{
+    margin-left: 10px;
+    font-family: young;
+    color: hsl(14, 45%, 36%);
+}
+#nutr{
+    color: hsl(14, 45%, 36%);
+    padding-left: 10px;
+    font-family: young;
+}
+.nutr td{
+    color: hsl(14, 45%, 36%);
+    padding: 10px;
+}
+.nutr tr{
+    padding: 10px;
+}
+#pt{
+    padding-left: 10px;
+}
+a{
+    text-decoration: none;
+    color: hsl(14, 45%, 36%);
+    font-weight: bold;
+    padding-left: 5px;
+}
+
+.ingredients{
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+.nutr tr th td{
+    text-align: center;
+    padding-left: 10px;
+}

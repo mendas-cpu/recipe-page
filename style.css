@@ -1,3 +1,15 @@
+:root{
+    --primary-color1:hsl(30, 54%, 90%);
+    --primary-color2:hsl(30, 18%, 87%);
+    --primary-color3:hsl(30, 10%, 34%);
+    --primary-color4:hsl(24, 5%, 18%);
+
+    --secondar-color1:hsl(14, 45%, 36%);
+    --secondar-color1:hsl(332, 51%, 32%);
+    --secondar-color1:hsl(330, 100%, 98%);
+
+
+}
 .attribution{
     text-align: center;
 }
@@ -16,6 +28,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
 }
 
 .all{
@@ -26,15 +39,18 @@ body{
     text-align: left;
     font-family: outfit;
     font-size: 16px;
-
+    width: 100%;
+    padding: 30px;
+    border: 1px solid white;
+    border-radius: 20px;
 }
 
 .container{
     width: 60%;
     display: flex;
     flex-direction: column;
-    border: 5px solid white;
-    border-radius: 15px;
+
+    align-items: center;
 }
 @font-face {
     font-family: outfit;
@@ -47,21 +63,24 @@ body{
 #title1{
     font-family: young;
     margin-left: 15px;
-    margin-bottom: auto;
+    margin-bottom: 20px;
 
 }
-.p1{
-    position: relative;
-    margin-top: auto;
-    margin-left: 15px;
+.introduction_{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+.introduction_ p{
+    line-height: 25px;
 }
 .prep{
     display: flex;
     background-color: hsl(330, 100%, 98%);
     width: 100%;
-    align-items: center;
+    align-items:flex-start;
     justify-content: center;
-
+    flex-direction: column;
 }
 #ul1 li{
     padding: 10px;
@@ -73,18 +92,21 @@ body{
     color: hsl(332, 51%, 32%);
 }
 
-#prept{
-    float: none;
-}
 #ing{
     font-family: young;
     padding-left: 10px;
     margin-bottom: auto;
     color: hsl(14, 45%, 36%);
 }
-
+.instructionsdiv{
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+.orderedlist{
+    line-height: 50px;
+}
 .orderedlist li{
     padding: 10px;
+    line-height: 30px;
 }
 .orderedlist li::marker{
     color: hsl(14, 45%, 36%);
@@ -105,16 +127,30 @@ body{
     padding-left: 10px;
     font-family: young;
 }
+.nutrdiv{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+
 .nutr td{
     color: hsl(14, 45%, 36%);
     padding: 10px;
+    margin-bottom: 1px solid hsl(30, 18%, 87%);
 }
+
 .nutr tr{
     padding: 10px;
 }
-#pt{
-    padding-left: 10px;
+.nutr th{
+    font-weight: 300;
+    padding-right: 500px;
+    border-bottom: 1px solid hsl(30, 18%, 87%);
 }
+#prept{
+    margin-left: 15px;
+}
+
 a{
     text-decoration: none;
     color: hsl(14, 45%, 36%);
@@ -128,4 +164,30 @@ a{
 .nutr tr th td{
     text-align: center;
     padding-left: 10px;
+}
+@media (max-width:768px) {
+    body{
+        padding: 0px;
+    }
+    .all{
+        width: 100%;
+        padding: 10px;
+        margin: 0px;
+    }
+    .container{
+        width: 100%;
+        padding: 0px;
+        border: none;
+    }
+    .nutr th{
+        padding-right: 100px;
+    }
+    #img1{
+        width: 100%;
+        height: 100%;
+        border-radius: 0px;
+        padding: 0px;
+        margin: 0px;
+    }
+    
 }
